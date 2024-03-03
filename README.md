@@ -1,5 +1,7 @@
 This repository contains configuration file for iTerm2 to create the view like on the screenshot below.
-![[iterm2-veiw.png]]
+
+![iTerm 2 view](iterm2-view.png)
+
 There are some pre-requisites should be satisfied first:
 - install [iTerm 2](https://iterm2.com/downloads.html)
 - install [Oh-My-Zsh](https://ohmyz.sh/#install)

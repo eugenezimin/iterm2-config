@@ -50,3 +50,5 @@ alias la='lsd -l -A --group-dirs=first'
 alias cat=cat
 alias less=less
 ```
+
+or you may try to use 'install-all.sh' script on your own risk.

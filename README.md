@@ -51,4 +51,4 @@ alias cat=cat
 alias less=less
 ```
 
-or you may try to use 'install-all.sh' script on your own risk.
+or you may try to use `install-all.sh` script on your own risk.

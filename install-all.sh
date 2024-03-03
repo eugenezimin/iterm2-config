@@ -5,11 +5,6 @@ if [ ! -d "/Applications/iTerm.app" ]; then
   exit 1
 fi
 
-if ! command -v git >/dev/null; then
-  echo "Error: 'git' is not installed."
-  exit 1
-fi
-
 echo -n "Enter your name: " && read -p "" user_name
 echo -n "Enter your email: " && read -p "" user_email
 
@@ -42,6 +37,9 @@ echo "$config" > ~/.gitconfig
 
 # install brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# install git
+brew install git
 
 # install oh-my-zsh via curl
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"

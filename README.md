@@ -1,7 +1,7 @@
+### Make iTerm nice
+
 This repository contains configuration file for iTerm2 to create the view like on the screenshot below.
-
 ![iTerm 2 view](iterm2-view.png)
-
 There are some pre-requisites should be satisfied first:
 - install [iTerm 2](https://iterm2.com/downloads.html)
 - install [Oh-My-Zsh](https://ohmyz.sh/#install)
@@ -52,3 +52,17 @@ alias less=less
 ```
 
 or you may try to use `install-all.sh` script on your own risk.
+
+### Read configuration into iTerm
+
+Simply do like it is shown on the picture:
+![Restore Configuration](iterm2-config.png)
+
+There is also another way to keep it updated in case you would like to use Git or another remote repository to store your configs.
+```shell
+# Specify the preferences directory
+defaults write com.googlecode.iterm2 PrefsCustomFolder -string "~/Desktop/iTerm/settings"
+
+# Tell iTerm2 to use the custom preferences in the directory
+defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true
+```
